@@ -1,0 +1,198 @@
+* {
+  /* font-family: "El Messiri", sans-serif; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  background-image: url(bg.png);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+header img {
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e90ff;
+  text-align: right;
+}
+
+.card input[type="text"] {
+  width: calc(90% - 20px);
+  margin-bottom: 10px;
+}
+
+.card input[type="text"],
+.card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  font-size: 18px;
+  color: #333;
+  font-family: "El Messiri", sans-serif;
+  text-align: right;
+}
+
+input[type="text" i] {
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+
+input:not([type="file" i],
+  [type="image" i],
+  [type="checkbox" i],
+  [type="radio" i]) {}
+
+.card input[type="color"] {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+input[type="color" i] {
+  appearance: auto;
+  inline-size: 50px;
+  block-size: 27px;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  color: buttontext;
+  border-width: 1px;
+  border-style: solid;
+  border-color: buttonborder;
+  border-image: initial;
+  padding: 1px 2px;
+}
+
+.card button[type="submit"] {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card button[type="submit"]:hover {
+  background-color: #176d7a;
+}
+
+.download-button-container {
+  text-align: center;
+}
+
+.download-button-container {
+  display: felx;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card .download-link {
+  display: none;
+  text-align: center;
+}
+
+.card a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 10px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.download-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.previewz {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+
+/* @media print {
+  body {
+    display: none;
+  }
+
+  #greetingForm {
+    display: block;
+  }
+} */
+
+/* .card {
+    display: none;
+  }
+} */

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمة طباعه</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="مولد البطاقه">
+    <div class="header-content">
+      <h1>طباعة غلاف المواد الدراسيه</h1>
+    </div>
+  </header>
+  <div class="card">
+    <form id="greetingForm" dir="rtl">
+
+
+      <label for="school">الصف</label>
+      <div style="display: flex; gap: 7px; ">
+        <input type="text" id="school" name="school" required="">
+        <input type="color" id="schoolColor" name="schoolColor" value="#000000">
+      </div>
+
+
+
+      <label for="teacher">اسم المعلم</label>
+      <div style="display: flex; gap: 7px;">
+        <input type="text" id="teacher" name="teacher" required="">
+        <input type="color" id="teacherColor" name="teacherColor" value="#000000">
+      </div>
+      <label for="director">قائد المدرسة</label>
+      <div style="display: flex; gap: 7px;">
+        <input type="text" id="director" name="director" required="">
+        <input type="color" id="directorColor" name="directorColor" value="#000000">
+      </div>
+      <br><br>
+    </form>
+    <button type="submit" id="submit">انشاء وملء النموذج</button>
+    <img src="غلاف.jpg" class=" previewz">
+    <!-- Preview image will be displayed here -->
+    <div id="imageContainer">
+      ...
+      <img src="غلاف.jpg" class=" previewz">
+    </div>
+
+    <br><br>
+
+    <div class="download-button-container">
+      <a href="#" class="download-link" download="greeting-card.jpg">تحميل النموذج</a>
+      <a type="button" id="printPdfButton">طباعة ملف PDF</a>
+    </div>
+
+    <br>
+  </div>
+
+</body>
+<script>
+  let submit = document.getElementById("submit")
+  // console.log(submit)
+  let school = document.getElementById("school")
+  let teacher = document.getElementById("teacher")
+  let director = document.getElementById("director")
+  let schoolColor = document.getElementById("schoolColor")
+  let teacherColor = document.getElementById("teacherColor")
+  let directorColor = document.getElementById("directorColor")
+  // let imageContainer = document.getElementById("imageContainer").style.display = "none"
+  submit.addEventListener("click", function () {
+    if (school.value !== "" & teacher.value !== "" & director.value !== "") {
+      let array = [ school.value, schoolColor.value, teacher.value, teacherColor.value, director.value, directorColor.value ]
+
+      console.log(array)
+    }
+  })
+  let printPdfButton = document.getElementById("printPdfButton")
+  printPdfButton.addEventListener("click", function () {
+
+    window.print();
+  })
+</script>
+
+</html>
